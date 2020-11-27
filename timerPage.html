@@ -11,9 +11,27 @@
     <header>
         <img src="" alt="Mighty Coders Logo">
     </header>
-    <br>
-    <h1>Activity Timer</h1>
-    <br>
-    <div id="timer"></div>
+    <main>
+        <h1>Activity Timer</h1>
+        <br>
+        <div id="clock">
+            <div id="timer"></div>
+        </div>
+        <button id="start" onclick=countdownTimer();reset();>Start</button>
+        <br>
+        <br>
+        <ul id="activities">
+            <li id="1">Activity 1</li>
+            <li id="2">Activity 2</li>
+            <li id="3">Activity 3</li>
+            <li id="4">Activity 4</li>
+            <li id="5">Activity 5</li>
+        </ul>
+        <form>
+            <input type="text" id= "newActivity" placeholder="Add your own activity!">
+            <br>
+            <input type="submit" value="submit" id="submit" onclick=addToList()>
+        </form>
+    </main>
 </body>
 </html>

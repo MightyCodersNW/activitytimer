@@ -1,0 +1,22 @@
+#clock{
+    background-color: rgb(4, 88, 4);
+
+}
+
+#timer{
+    border: 2px black;
+    color: teal;
+    background-color: #ffffff;
+    font-size: 3em;
+
+}
+
+#selected{
+    font-size: 2rem;
+    color: #c23232;
+}
+
+h1{
+    text-decoration: underline;
+    text-emphasis: bold;
+}
