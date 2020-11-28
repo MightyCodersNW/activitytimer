@@ -26,12 +26,12 @@ function countdownTimer(){
             sec = sec - 1;
         } else {
             clearInterval(countDown);
-            countDiv.innerHTML = 'Activity Time!!';
+            countDiv.innerHTML = 'Break Time!';
             //End Borrowed code
             let range=document.getElementById('activities').lastElementChild.id
             let randact = Math.floor(Math.random() * range + 1)
             let selected = document.getElementById(randact)
-            selected.setAttribute('id','selected')
+            selected.setAttribute('class','selected')
         }
     }
 
@@ -51,11 +51,6 @@ const addToList = ()=>{
 };
 
 function reset(){
-    let acts = document.querySelectorAll('li[id]')
-    for (i=0; i<acts.length; i++){
-        if (id = 'selected'){
-            let red = document.getElementById('selected')
-            red.removeAttribute('id', 'selected')
-        }
-    }  
+    let acts = document.querySelector('li[class]')
+    acts.removeAttribute('class', 'selected')
 }
