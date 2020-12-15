@@ -37,6 +37,7 @@ function countdownTimer(){
 
 }
 
+//add an activity from the input to the ul
 const addToList = ()=>{
     let entry = document.getElementById("newActivity").value
     let prev = document.getElementById('activities').lastElementChild.id
@@ -50,6 +51,7 @@ const addToList = ()=>{
     event.preventDefault()
 };
 
+//resets the selected activity once the button is clicked again
 function reset(){
     let acts = document.querySelector('li[class]')
     acts.removeAttribute('class', 'selected')
