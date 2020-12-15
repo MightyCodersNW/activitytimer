@@ -1,6 +1,6 @@
 function countdownTimer(){
     //following section of JS code for 30min timer borrowed from https://codepen.io/falak786/pen/oddYYd
-    var sec         = 10,
+    var sec         = 60,
     countDiv    = document.getElementById("timer"),
     secpass,
     countDown   = setInterval(function () {
